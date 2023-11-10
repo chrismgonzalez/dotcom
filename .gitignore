@@ -1,1 +1,7 @@
 .pnpm-store/
+
+.next
+
+.pnpm-store
+
+node_modules
