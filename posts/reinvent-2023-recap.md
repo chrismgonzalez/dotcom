@@ -1,6 +1,6 @@
 ---
-title: 'Re:Invent 2023 Recap'
-date: '2023-12-01'
+title: 'Blog: Coming Soon'
+date: '2023-11-21'
 ---
 
-This will be a post about Re:Invent 2023
+chrismgonzalez.com blog is coming soon!  Check back regularly for updates!
