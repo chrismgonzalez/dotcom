@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className={utilStyles.headingSm}>
         <p className={homeStyles.description}> Cloud Architect | Creator | Educator </p>
       </section>
       <SocialFollow className={homeStyles.container}/>
