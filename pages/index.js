@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import homeStyles from '../styles/Home.module.css';
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
+import SocialFollow from '../components/social';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -23,10 +24,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p className={homeStyles.description}> Cloud Architect | Creator | Educator </p>
-        <p className={homeStyles.description}>
-          Welcome! Enjoy your time as you browse my blogs and tutorials.
-        </p>
       </section>
+      <SocialFollow className={homeStyles.container}/>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Articles</h2>
         <ul className={utilStyles.list}>

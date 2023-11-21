@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import SocialFollow from './social';
 
 const name = 'Chris Gonzalez';
 export const siteTitle = 'chrismgonzalez.com';
@@ -55,6 +56,7 @@ export default function Layout({ children, home }) {
                 {name}
               </Link>
             </h2>
+            <SocialFollow />
           </>
         )}
       </header>
