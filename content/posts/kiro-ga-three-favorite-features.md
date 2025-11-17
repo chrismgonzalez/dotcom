@@ -132,4 +132,4 @@ If you want to try Kiro:
 - **New user bonus**: 500 credits for 30 days
 - **Startup offer**: If you're at a startup (up to Series B), you can get a full year of Pro+ for free (until Dec 31, 2025)
 - **CLI install**: `curl -fsSL https://cli.kiro.dev/install | bash` (macOS/Linux)
-- **IDE install**: [Download](https://kiro.dev/downloads/)
+- **IDE install**: [Download for your OS here](https://kiro.dev/downloads/)
