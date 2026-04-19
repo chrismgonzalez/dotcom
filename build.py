@@ -6,7 +6,6 @@ About:  about/index.md -> dist/about/index.html
 Index:  auto-generated  -> dist/index.html
 """
 
-import os
 import re
 import shutil
 from datetime import datetime
@@ -106,8 +105,9 @@ def _shell(title: str, canonical: str, body: str, active_nav: str = "") -> str:
     <div class="site-footer-inner">
       <p>© 2026 ChrisDoesCloud</p>
       <p>
-        <a href="https://github.com/chrismgonzalez" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/chrismgonzalez" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/chrismgonzalez" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/chrismgonzalez" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/chrisdoescloud" target="_blank" rel="noopener noreferrer">X</a>
       </p>
     </div>
   </footer>
