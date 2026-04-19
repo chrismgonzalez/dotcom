@@ -1,12 +1,24 @@
-# Dependencies
+# Build output
+dist/
 
-# Production
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Hugo (legacy — no longer used)
 /public
-
 .hugo_build.lock
-# Misc
+
+# Playwright
+.playwright-mcp/
+
+# Local Claude settings
+.claude/settings.local.json
+
+# OS
 .DS_Store
+
+# Env
+.env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local

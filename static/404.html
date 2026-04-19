@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — chrisdoescloud.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --base:    #1e1e2e;
+      --mantle:  #181825;
+      --surface0:#313244;
+      --overlay0:#6c7086;
+      --overlay1:#7f849c;
+      --text:    #cdd6f4;
+      --subtext1:#bac2de;
+      --mauve:   #cba6f7;
+      --red:     #f38ba8;
+      --peach:   #fab387;
+      --green:   #a6e3a1;
+      --yellow:  #f9e2af;
+      --blue:    #89b4fa;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--base);
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .terminal {
+      width: 100%;
+      max-width: 680px;
+      background: var(--mantle);
+      border: 1px solid var(--surface0);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+      animation: drop-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes drop-in {
+      from { opacity: 0; transform: translateY(-20px) scale(0.98); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .titlebar {
+      background: var(--surface0);
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .dot-red    { background: #f38ba8; }
+    .dot-yellow { background: #f9e2af; }
+    .dot-green  { background: #a6e3a1; }
+
+    .titlebar-label {
+      font-size: 0.72rem;
+      color: var(--overlay1);
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateX(-22px);
+    }
+
+    .body {
+      padding: 1.5rem;
+    }
+
+    .line {
+      display: block;
+      opacity: 0;
+      animation: appear 0.01s forwards;
+    }
+
+    .line:nth-child(1)  { animation-delay: 0.3s; }
+    .line:nth-child(2)  { animation-delay: 0.5s; }
+    .line:nth-child(3)  { animation-delay: 0.65s; }
+    .line:nth-child(4)  { animation-delay: 0.8s; }
+    .line:nth-child(5)  { animation-delay: 0.95s; }
+    .line:nth-child(6)  { animation-delay: 1.1s; }
+    .line:nth-child(7)  { animation-delay: 1.25s; }
+    .line:nth-child(8)  { animation-delay: 1.4s; }
+    .line:nth-child(9)  { animation-delay: 1.55s; }
+    .line:nth-child(10) { animation-delay: 1.7s; }
+    .line:nth-child(11) { animation-delay: 1.85s; }
+    .line:nth-child(12) { animation-delay: 2.0s; }
+    .line:nth-child(13) { animation-delay: 2.15s; }
+    .line:nth-child(14) { animation-delay: 2.3s; }
+    .line:nth-child(15) { animation-delay: 2.45s; }
+
+    @keyframes appear {
+      to { opacity: 1; }
+    }
+
+    .prompt { color: var(--green); }
+    .cmd    { color: var(--text); }
+    .err    { color: var(--red); }
+    .warn   { color: var(--yellow); }
+    .info   { color: var(--blue); }
+    .dim    { color: var(--overlay0); }
+    .bold   { font-weight: 700; }
+    .mauve  { color: var(--mauve); }
+    .peach  { color: var(--peach); }
+
+    .spacer { display: block; height: 0.6rem; opacity: 1; animation: none; }
+
+    .cursor {
+      display: inline-block;
+      width: 0.55em;
+      height: 1.1em;
+      background: var(--mauve);
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+      opacity: 0;
+      animation-delay: 2.6s;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+
+    .footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--overlay0);
+      animation: appear 0.01s 2.8s forwards;
+      opacity: 0;
+    }
+
+    .footer a {
+      color: var(--mauve);
+      text-decoration: none;
+    }
+
+    .footer a:hover { color: var(--blue); }
+
+    @media (max-width: 600px) {
+      body { font-size: 0.78rem; padding: 1rem; }
+      .body { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="terminal">
+    <div class="titlebar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="titlebar-label">bash — chrisdoescloud.com</span>
+    </div>
+    <div class="body">
+      <span class="line"><span class="prompt">→</span> <span class="cmd">curl -s chrisdoescloud.com<span id="path"></span></span></span>
+      <span class="spacer"></span>
+      <span class="line"><span class="err bold">HTTP/2 404 Not Found</span></span>
+      <span class="line"><span class="dim">x-cache: Miss from CloudFront</span></span>
+      <span class="line"><span class="dim">x-amz-cf-id: y0uR3aLLy5ur3th1sIsWh3r3Y0uW4nt3dT0B3</span></span>
+      <span class="spacer"></span>
+      <span class="line"><span class="warn">⚠ PageNotFoundError: The page you requested has been:</span></span>
+      <span class="line"><span class="dim">    - accidentally <span class="err">rm -rf</span>'d</span></span>
+      <span class="line"><span class="dim">    - pushed to the wrong S3 bucket</span></span>
+      <span class="line"><span class="dim">    - lost in a botched CloudFront invalidation</span></span>
+      <span class="line"><span class="dim">    - never written in the first place (most likely)</span></span>
+      <span class="spacer"></span>
+      <span class="line"><span class="info">at CloudFront.serveOrigin (/edge/us-east-1/handler.js:404)</span></span>
+      <span class="line"><span class="info">at S3.getObject (key=<span class="peach">this-page-does-not-exist</span>)</span></span>
+      <span class="line"><span class="info">at clownArchitect.deploy (<span class="mauve">chrisdoescloud.com</span>:1:1)</span></span>
+      <span class="spacer"></span>
+      <span class="line"><span class="prompt">→</span> <span class="cmd">cd /somewhere/that/exists</span> <span class="cursor"></span></span>
+    </div>
+  </div>
+
+  <p class="footer">
+    nothing to see here &mdash; <a href="/">take me home</a>
+  </p>
+
+  <script>
+    // Show the actual path that was requested
+    const el = document.getElementById('path');
+    const p = window.location.pathname;
+    if (p && p !== '/404.html') el.textContent = p;
+  </script>
+
+</body>
+</html>

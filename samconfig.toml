@@ -1,0 +1,9 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "chrisdoescloud-site"
+region = "us-east-1"
+capabilities = "CAPABILITY_NAMED_IAM"
+confirm_changeset = true
+resolve_s3 = true
+parameter_overrides = "DomainName=chrisdoescloud.com CertificateArn=arn:aws:acm:us-east-1:039624955047:certificate/20223716-09e1-4016-b35a-50eeb4318ad5"
