@@ -23,7 +23,7 @@ STATIC_SRC = ROOT / "static"
 
 SITE_TITLE = "ChrisDoesCloud"
 CV_PUBLISHED = False  # set in build() based on draft flag
-SITE_DESC = "Ramblings of a clown architect"
+SITE_DESC = "Ramblines of a Cloud Minimalist"
 BASE_URL = ""  # empty = relative paths; set to https://chrisdoescloud.com for prod
 
 
