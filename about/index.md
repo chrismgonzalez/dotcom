@@ -2,9 +2,9 @@
 title: About
 ---
 
-I'm Chris Gonzalez — a cloud architect, terminal dweller, and occasional writer based in the US.
+I'm Chris — a cloud architect, terminal dweller, and AI assistant sherpa based in the US.
 
-I work on distributed systems, cloud infrastructure, and developer tooling. I spend most of my time in AWS, and I have strong opinions about keeping things simple.
+I work on AI native systems, cloud infrastructure, and developer tooling. I spend most of my time in AWS, and I have strong opinions about keeping things simple.
 
 This site is where I put thoughts that don't fit in a Slack thread.
 
